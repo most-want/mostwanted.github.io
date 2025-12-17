@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Queen Lizz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Queen Lizz 🔥</a>
+      <ul class="nav-menu">
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="menu.html" class="active">📋 Menu</a></li>
+        <li><a href="about.html">📖 About</a></li>
+        <li><a href="gallery.html">📸 Gallery</a></li>
+        <li><a href="contact.html">📞 Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Full Menu</h1>
+      <p>All prices in Ghana Cedis (GHS)</p>
+    </div>
+  </section>
+
+  <section class="menu-categories">
+    <div class="container">
+      <div class="category-tabs">
+        <button class="tab-btn active" onclick="showCategory('all')">All</button>
+        <button class="tab-btn" onclick="showCategory('seafood')">Seafood</button>
+      </div>
+
+      <div class="menu-items">
+        <!-- Grilled Tilapia -->
+        <div class="menu-item" data-category="seafood">
+          <img src="tilapia3.jpeg" alt="Grilled Tilapia">
+          <div class="item-info">
+            <h3>Grilled Tilapia + 2 Banku</h3>
+            <p>Whole tilapia charcoal grilled with spices. Served with 2 balls of banku and pepper sauce.</p>
+            <div class="prices">
+              <span class="price-label">Small:</span> GHS 50
+              <span class="price-label">Medium:</span> GHS 60
+              <span class="price-label">Large:</span> GHS 70
+            </div>
+          </div>
+        </div>
+
+        <!-- Smoked Salmon -->
+        <div class="menu-item" data-category="seafood">
+          <img src="salmon2.jpeg" alt="Smoked Salmon">
+          <div class="item-info">
+            <h3>Smoked Salmon (Shitolo)</h3>
+            <p>Traditional Ghanaian smoked salmon. Available in different sizes.</p>
+            <div class="prices">
+              <span class="price-label">Small:</span> GHS 20
+              <span class="price-label">Medium:</span> GHS 25
+              <span class="price-label">Large:</span> GHS 30
+              <span class="price-label">X-Large:</span> GHS 35
+            </div>
+          </div>
+        </div>
+
+        <!-- Banku -->
+        <div class="menu-item" data-category="sides">
+          <img src="banku1.jpeg" alt="Banku">
+          <div class="item-info">
+            <h3>Extra Banku</h3>
+            <p>Fermented corn and cassava dough. Per ball.</p>
+            <div class="prices">
+              <span class="price">GHS 3</span>
+            </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+
+  <footer>
+    <div class="container">
+      <p class="copyright">© 2025 Queen Lizz Restaurant | Academic Project</p>
+      <p>Pages: <a href="index.html">Home</a> | <a href="menu.html">Menu</a> | <a href="about.html">About</a> | <a href="gallery.html">Gallery</a> | <a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
